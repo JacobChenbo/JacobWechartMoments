@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		783EAE8E1F99E0000089DCEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAE8D1F99E0000089DCEB /* AppDelegate.m */; };
+		783EAE911F99E0000089DCEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAE901F99E0000089DCEB /* ViewController.m */; };
+		783EAE941F99E0000089DCEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783EAE921F99E0000089DCEB /* Main.storyboard */; };
+		783EAE961F99E0000089DCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783EAE951F99E0000089DCEB /* Assets.xcassets */; };
+		783EAE991F99E0000089DCEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783EAE971F99E0000089DCEB /* LaunchScreen.storyboard */; };
+		783EAE9C1F99E0000089DCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAE9B1F99E0000089DCEB /* main.m */; };
+		783EAEA61F99E0000089DCEB /* JacobWechatMomentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEA51F99E0000089DCEB /* JacobWechatMomentsTests.m */; };
+		783EAEB11F99E0000089DCEB /* JacobWechatMomentsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEB01F99E0000089DCEB /* JacobWechatMomentsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		783EAEA21F99E0000089DCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783EAE811F99E0000089DCEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783EAE881F99E0000089DCEB;
+			remoteInfo = JacobWechatMoments;
+		};
+		783EAEAD1F99E0000089DCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783EAE811F99E0000089DCEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783EAE881F99E0000089DCEB;
+			remoteInfo = JacobWechatMoments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		783EAE891F99E0000089DCEB /* JacobWechatMoments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JacobWechatMoments.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		783EAE8C1F99E0000089DCEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		783EAE8D1F99E0000089DCEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		783EAE8F1F99E0000089DCEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		783EAE901F99E0000089DCEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		783EAE931F99E0000089DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		783EAE951F99E0000089DCEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		783EAE981F99E0000089DCEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		783EAE9A1F99E0000089DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783EAE9B1F99E0000089DCEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		783EAEA11F99E0000089DCEB /* JacobWechatMomentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JacobWechatMomentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783EAEA51F99E0000089DCEB /* JacobWechatMomentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JacobWechatMomentsTests.m; sourceTree = "<group>"; };
+		783EAEA71F99E0000089DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783EAEAC1F99E0000089DCEB /* JacobWechatMomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JacobWechatMomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783EAEB01F99E0000089DCEB /* JacobWechatMomentsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JacobWechatMomentsUITests.m; sourceTree = "<group>"; };
+		783EAEB21F99E0000089DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		783EAE861F99E0000089DCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EAE9E1F99E0000089DCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EAEA91F99E0000089DCEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		783EAE801F99E0000089DCEB = {
+			isa = PBXGroup;
+			children = (
+				783EAE8B1F99E0000089DCEB /* JacobWechatMoments */,
+				783EAEA41F99E0000089DCEB /* JacobWechatMomentsTests */,
+				783EAEAF1F99E0000089DCEB /* JacobWechatMomentsUITests */,
+				783EAE8A1F99E0000089DCEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		783EAE8A1F99E0000089DCEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				783EAE891F99E0000089DCEB /* JacobWechatMoments.app */,
+				783EAEA11F99E0000089DCEB /* JacobWechatMomentsTests.xctest */,
+				783EAEAC1F99E0000089DCEB /* JacobWechatMomentsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		783EAE8B1F99E0000089DCEB /* JacobWechatMoments */ = {
+			isa = PBXGroup;
+			children = (
+				783EAE8C1F99E0000089DCEB /* AppDelegate.h */,
+				783EAE8D1F99E0000089DCEB /* AppDelegate.m */,
+				783EAE8F1F99E0000089DCEB /* ViewController.h */,
+				783EAE901F99E0000089DCEB /* ViewController.m */,
+				783EAE921F99E0000089DCEB /* Main.storyboard */,
+				783EAE951F99E0000089DCEB /* Assets.xcassets */,
+				783EAE971F99E0000089DCEB /* LaunchScreen.storyboard */,
+				783EAE9A1F99E0000089DCEB /* Info.plist */,
+				783EAE9B1F99E0000089DCEB /* main.m */,
+			);
+			path = JacobWechatMoments;
+			sourceTree = "<group>";
+		};
+		783EAEA41F99E0000089DCEB /* JacobWechatMomentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEA51F99E0000089DCEB /* JacobWechatMomentsTests.m */,
+				783EAEA71F99E0000089DCEB /* Info.plist */,
+			);
+			path = JacobWechatMomentsTests;
+			sourceTree = "<group>";
+		};
+		783EAEAF1F99E0000089DCEB /* JacobWechatMomentsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEB01F99E0000089DCEB /* JacobWechatMomentsUITests.m */,
+				783EAEB21F99E0000089DCEB /* Info.plist */,
+			);
+			path = JacobWechatMomentsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		783EAE881F99E0000089DCEB /* JacobWechatMoments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783EAEB51F99E0000089DCEB /* Build configuration list for PBXNativeTarget "JacobWechatMoments" */;
+			buildPhases = (
+				783EAE851F99E0000089DCEB /* Sources */,
+				783EAE861F99E0000089DCEB /* Frameworks */,
+				783EAE871F99E0000089DCEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JacobWechatMoments;
+			productName = JacobWechatMoments;
+			productReference = 783EAE891F99E0000089DCEB /* JacobWechatMoments.app */;
+			productType = "com.apple.product-type.application";
+		};
+		783EAEA01F99E0000089DCEB /* JacobWechatMomentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783EAEB81F99E0000089DCEB /* Build configuration list for PBXNativeTarget "JacobWechatMomentsTests" */;
+			buildPhases = (
+				783EAE9D1F99E0000089DCEB /* Sources */,
+				783EAE9E1F99E0000089DCEB /* Frameworks */,
+				783EAE9F1F99E0000089DCEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783EAEA31F99E0000089DCEB /* PBXTargetDependency */,
+			);
+			name = JacobWechatMomentsTests;
+			productName = JacobWechatMomentsTests;
+			productReference = 783EAEA11F99E0000089DCEB /* JacobWechatMomentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		783EAEAB1F99E0000089DCEB /* JacobWechatMomentsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783EAEBB1F99E0000089DCEB /* Build configuration list for PBXNativeTarget "JacobWechatMomentsUITests" */;
+			buildPhases = (
+				783EAEA81F99E0000089DCEB /* Sources */,
+				783EAEA91F99E0000089DCEB /* Frameworks */,
+				783EAEAA1F99E0000089DCEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783EAEAE1F99E0000089DCEB /* PBXTargetDependency */,
+			);
+			name = JacobWechatMomentsUITests;
+			productName = JacobWechatMomentsUITests;
+			productReference = 783EAEAC1F99E0000089DCEB /* JacobWechatMomentsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		783EAE811F99E0000089DCEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "陈波";
+				TargetAttributes = {
+					783EAE881F99E0000089DCEB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					783EAEA01F99E0000089DCEB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 783EAE881F99E0000089DCEB;
+					};
+					783EAEAB1F99E0000089DCEB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 783EAE881F99E0000089DCEB;
+					};
+				};
+			};
+			buildConfigurationList = 783EAE841F99E0000089DCEB /* Build configuration list for PBXProject "JacobWechatMoments" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 783EAE801F99E0000089DCEB;
+			productRefGroup = 783EAE8A1F99E0000089DCEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				783EAE881F99E0000089DCEB /* JacobWechatMoments */,
+				783EAEA01F99E0000089DCEB /* JacobWechatMomentsTests */,
+				783EAEAB1F99E0000089DCEB /* JacobWechatMomentsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783EAE871F99E0000089DCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783EAE991F99E0000089DCEB /* LaunchScreen.storyboard in Resources */,
+				783EAE961F99E0000089DCEB /* Assets.xcassets in Resources */,
+				783EAE941F99E0000089DCEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EAE9F1F99E0000089DCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EAEAA1F99E0000089DCEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		783EAE851F99E0000089DCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783EAE911F99E0000089DCEB /* ViewController.m in Sources */,
+				783EAE9C1F99E0000089DCEB /* main.m in Sources */,
+				783EAE8E1F99E0000089DCEB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EAE9D1F99E0000089DCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783EAEA61F99E0000089DCEB /* JacobWechatMomentsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EAEA81F99E0000089DCEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783EAEB11F99E0000089DCEB /* JacobWechatMomentsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		783EAEA31F99E0000089DCEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783EAE881F99E0000089DCEB /* JacobWechatMoments */;
+			targetProxy = 783EAEA21F99E0000089DCEB /* PBXContainerItemProxy */;
+		};
+		783EAEAE1F99E0000089DCEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783EAE881F99E0000089DCEB /* JacobWechatMoments */;
+			targetProxy = 783EAEAD1F99E0000089DCEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		783EAE921F99E0000089DCEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				783EAE931F99E0000089DCEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		783EAE971F99E0000089DCEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				783EAE981F99E0000089DCEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		783EAEB31F99E0000089DCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		783EAEB41F99E0000089DCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		783EAEB61F99E0000089DCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDYKR66KN4;
+				INFOPLIST_FILE = JacobWechatMoments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMoments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		783EAEB71F99E0000089DCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDYKR66KN4;
+				INFOPLIST_FILE = JacobWechatMoments/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMoments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		783EAEB91F99E0000089DCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDYKR66KN4;
+				INFOPLIST_FILE = JacobWechatMomentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMomentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JacobWechatMoments.app/JacobWechatMoments";
+			};
+			name = Debug;
+		};
+		783EAEBA1F99E0000089DCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDYKR66KN4;
+				INFOPLIST_FILE = JacobWechatMomentsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMomentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JacobWechatMoments.app/JacobWechatMoments";
+			};
+			name = Release;
+		};
+		783EAEBC1F99E0000089DCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDYKR66KN4;
+				INFOPLIST_FILE = JacobWechatMomentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMomentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JacobWechatMoments;
+			};
+			name = Debug;
+		};
+		783EAEBD1F99E0000089DCEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VDYKR66KN4;
+				INFOPLIST_FILE = JacobWechatMomentsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMomentsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JacobWechatMoments;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		783EAE841F99E0000089DCEB /* Build configuration list for PBXProject "JacobWechatMoments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783EAEB31F99E0000089DCEB /* Debug */,
+				783EAEB41F99E0000089DCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783EAEB51F99E0000089DCEB /* Build configuration list for PBXNativeTarget "JacobWechatMoments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783EAEB61F99E0000089DCEB /* Debug */,
+				783EAEB71F99E0000089DCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783EAEB81F99E0000089DCEB /* Build configuration list for PBXNativeTarget "JacobWechatMomentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783EAEB91F99E0000089DCEB /* Debug */,
+				783EAEBA1F99E0000089DCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783EAEBB1F99E0000089DCEB /* Build configuration list for PBXNativeTarget "JacobWechatMomentsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783EAEBC1F99E0000089DCEB /* Debug */,
+				783EAEBD1F99E0000089DCEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 783EAE811F99E0000089DCEB /* Project object */;
+}

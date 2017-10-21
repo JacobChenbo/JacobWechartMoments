@@ -15,6 +15,22 @@
 		783EAE9C1F99E0000089DCEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAE9B1F99E0000089DCEB /* main.m */; };
 		783EAEA61F99E0000089DCEB /* JacobWechatMomentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEA51F99E0000089DCEB /* JacobWechatMomentsTests.m */; };
 		783EAEB11F99E0000089DCEB /* JacobWechatMomentsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEB01F99E0000089DCEB /* JacobWechatMomentsUITests.m */; };
+		783EAEC81F99EDFE0089DCEB /* JCMomentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEC71F99EDFE0089DCEB /* JCMomentsViewController.m */; };
+		783EAECC1F99F13F0089DCEB /* JCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAECB1F99F13F0089DCEB /* JCRequest.m */; };
+		783EAECF1F9B14D70089DCEB /* JCGetUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAECE1F9B14D70089DCEB /* JCGetUserRequest.m */; };
+		783EAED21F9B15AF0089DCEB /* JCGetTweetsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAED11F9B15AF0089DCEB /* JCGetTweetsRequest.m */; };
+		783EAED51F9B169F0089DCEB /* JCMomentsRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAED41F9B169F0089DCEB /* JCMomentsRequestManager.m */; };
+		783EAED81F9B18110089DCEB /* JCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAED71F9B18110089DCEB /* JCNavigationViewController.m */; };
+		783EAEDC1F9B1C6B0089DCEB /* JCMomentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEDB1F9B1C6B0089DCEB /* JCMomentsViewModel.m */; };
+		783EAEDF1F9B1DDE0089DCEB /* JCUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEDE1F9B1DDE0089DCEB /* JCUserInfoModel.m */; };
+		783EAEE21F9B20A20089DCEB /* JCSingleTweetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEE11F9B20A20089DCEB /* JCSingleTweetModel.m */; };
+		783EAEE51F9B215B0089DCEB /* JCMomentsSenderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEE41F9B215B0089DCEB /* JCMomentsSenderModel.m */; };
+		783EAEE81F9B21F20089DCEB /* JCMomentsCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEE71F9B21F20089DCEB /* JCMomentsCommentModel.m */; };
+		783EAEEB1F9B22250089DCEB /* JCMomentsImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEEA1F9B22250089DCEB /* JCMomentsImageModel.m */; };
+		783EAEEE1F9B28250089DCEB /* JCMomentsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEED1F9B28250089DCEB /* JCMomentsHeaderView.m */; };
+		783EAEF31F9B42140089DCEB /* UIImageView+ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEF21F9B42140089DCEB /* UIImageView+ImageCache.m */; };
+		783EAEF61F9B45FD0089DCEB /* JCImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEF51F9B45FD0089DCEB /* JCImageLoader.m */; };
+		783EAEF91F9B48970089DCEB /* JCImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEF81F9B48970089DCEB /* JCImageCache.m */; };
 		D923B2099B3969B36FB8261A /* libPods-JacobWechatMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +70,40 @@
 		783EAEAC1F99E0000089DCEB /* JacobWechatMomentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JacobWechatMomentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		783EAEB01F99E0000089DCEB /* JacobWechatMomentsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JacobWechatMomentsUITests.m; sourceTree = "<group>"; };
 		783EAEB21F99E0000089DCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783EAEBE1F99E81A0089DCEB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		783EAEC61F99EDFE0089DCEB /* JCMomentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsViewController.h; sourceTree = "<group>"; };
+		783EAEC71F99EDFE0089DCEB /* JCMomentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsViewController.m; sourceTree = "<group>"; };
+		783EAECA1F99F13F0089DCEB /* JCRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRequest.h; sourceTree = "<group>"; };
+		783EAECB1F99F13F0089DCEB /* JCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRequest.m; sourceTree = "<group>"; };
+		783EAECD1F9B14D70089DCEB /* JCGetUserRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCGetUserRequest.h; sourceTree = "<group>"; };
+		783EAECE1F9B14D70089DCEB /* JCGetUserRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCGetUserRequest.m; sourceTree = "<group>"; };
+		783EAED01F9B15AF0089DCEB /* JCGetTweetsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCGetTweetsRequest.h; sourceTree = "<group>"; };
+		783EAED11F9B15AF0089DCEB /* JCGetTweetsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCGetTweetsRequest.m; sourceTree = "<group>"; };
+		783EAED31F9B169F0089DCEB /* JCMomentsRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsRequestManager.h; sourceTree = "<group>"; };
+		783EAED41F9B169F0089DCEB /* JCMomentsRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsRequestManager.m; sourceTree = "<group>"; };
+		783EAED61F9B18110089DCEB /* JCNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCNavigationViewController.h; sourceTree = "<group>"; };
+		783EAED71F9B18110089DCEB /* JCNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCNavigationViewController.m; sourceTree = "<group>"; };
+		783EAEDA1F9B1C6B0089DCEB /* JCMomentsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsViewModel.h; sourceTree = "<group>"; };
+		783EAEDB1F9B1C6B0089DCEB /* JCMomentsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsViewModel.m; sourceTree = "<group>"; };
+		783EAEDD1F9B1DDE0089DCEB /* JCUserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCUserInfoModel.h; sourceTree = "<group>"; };
+		783EAEDE1F9B1DDE0089DCEB /* JCUserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCUserInfoModel.m; sourceTree = "<group>"; };
+		783EAEE01F9B20A20089DCEB /* JCSingleTweetModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSingleTweetModel.h; sourceTree = "<group>"; };
+		783EAEE11F9B20A20089DCEB /* JCSingleTweetModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSingleTweetModel.m; sourceTree = "<group>"; };
+		783EAEE31F9B215B0089DCEB /* JCMomentsSenderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsSenderModel.h; sourceTree = "<group>"; };
+		783EAEE41F9B215B0089DCEB /* JCMomentsSenderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsSenderModel.m; sourceTree = "<group>"; };
+		783EAEE61F9B21F20089DCEB /* JCMomentsCommentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsCommentModel.h; sourceTree = "<group>"; };
+		783EAEE71F9B21F20089DCEB /* JCMomentsCommentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsCommentModel.m; sourceTree = "<group>"; };
+		783EAEE91F9B22250089DCEB /* JCMomentsImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsImageModel.h; sourceTree = "<group>"; };
+		783EAEEA1F9B22250089DCEB /* JCMomentsImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsImageModel.m; sourceTree = "<group>"; };
+		783EAEEC1F9B28250089DCEB /* JCMomentsHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsHeaderView.h; sourceTree = "<group>"; };
+		783EAEED1F9B28250089DCEB /* JCMomentsHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsHeaderView.m; sourceTree = "<group>"; };
+		783EAEEF1F9B2F4A0089DCEB /* JCDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDefine.h; sourceTree = "<group>"; };
+		783EAEF11F9B42140089DCEB /* UIImageView+ImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ImageCache.h"; sourceTree = "<group>"; };
+		783EAEF21F9B42140089DCEB /* UIImageView+ImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ImageCache.m"; sourceTree = "<group>"; };
+		783EAEF41F9B45FD0089DCEB /* JCImageLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCImageLoader.h; sourceTree = "<group>"; };
+		783EAEF51F9B45FD0089DCEB /* JCImageLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCImageLoader.m; sourceTree = "<group>"; };
+		783EAEF71F9B48970089DCEB /* JCImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCImageCache.h; sourceTree = "<group>"; };
+		783EAEF81F9B48970089DCEB /* JCImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCImageCache.m; sourceTree = "<group>"; };
 		9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JacobWechatMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,6 +166,8 @@
 		783EAE8B1F99E0000089DCEB /* JacobWechatMoments */ = {
 			isa = PBXGroup;
 			children = (
+				783EAEC01F99EDDE0089DCEB /* Class */,
+				783EAEBF1F99EDDE0089DCEB /* Library */,
 				783EAE8C1F99E0000089DCEB /* AppDelegate.h */,
 				783EAE8D1F99E0000089DCEB /* AppDelegate.m */,
 				783EAE8F1F99E0000089DCEB /* ViewController.h */,
@@ -125,6 +177,8 @@
 				783EAE971F99E0000089DCEB /* LaunchScreen.storyboard */,
 				783EAE9A1F99E0000089DCEB /* Info.plist */,
 				783EAE9B1F99E0000089DCEB /* main.m */,
+				783EAEBE1F99E81A0089DCEB /* PrefixHeader.pch */,
+				783EAEEF1F9B2F4A0089DCEB /* JCDefine.h */,
 			);
 			path = JacobWechatMoments;
 			sourceTree = "<group>";
@@ -145,6 +199,116 @@
 				783EAEB21F99E0000089DCEB /* Info.plist */,
 			);
 			path = JacobWechatMomentsUITests;
+			sourceTree = "<group>";
+		};
+		783EAEBF1F99EDDE0089DCEB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEF01F9B40E90089DCEB /* ImageCache */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		783EAEC01F99EDDE0089DCEB /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEC91F99EFC70089DCEB /* Base */,
+				783EAEC11F99EDDE0089DCEB /* Moments */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		783EAEC11F99EDDE0089DCEB /* Moments */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEC21F99EDDE0089DCEB /* Controller */,
+				783EAED91F9B1C4F0089DCEB /* ViewModel */,
+				783EAEC31F99EDDE0089DCEB /* Model */,
+				783EAEC41F99EDDE0089DCEB /* Network */,
+				783EAEC51F99EDDE0089DCEB /* View */,
+			);
+			path = Moments;
+			sourceTree = "<group>";
+		};
+		783EAEC21F99EDDE0089DCEB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEC61F99EDFE0089DCEB /* JCMomentsViewController.h */,
+				783EAEC71F99EDFE0089DCEB /* JCMomentsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		783EAEC31F99EDDE0089DCEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEDD1F9B1DDE0089DCEB /* JCUserInfoModel.h */,
+				783EAEDE1F9B1DDE0089DCEB /* JCUserInfoModel.m */,
+				783EAEE01F9B20A20089DCEB /* JCSingleTweetModel.h */,
+				783EAEE11F9B20A20089DCEB /* JCSingleTweetModel.m */,
+				783EAEE31F9B215B0089DCEB /* JCMomentsSenderModel.h */,
+				783EAEE41F9B215B0089DCEB /* JCMomentsSenderModel.m */,
+				783EAEE61F9B21F20089DCEB /* JCMomentsCommentModel.h */,
+				783EAEE71F9B21F20089DCEB /* JCMomentsCommentModel.m */,
+				783EAEE91F9B22250089DCEB /* JCMomentsImageModel.h */,
+				783EAEEA1F9B22250089DCEB /* JCMomentsImageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		783EAEC41F99EDDE0089DCEB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				783EAECD1F9B14D70089DCEB /* JCGetUserRequest.h */,
+				783EAECE1F9B14D70089DCEB /* JCGetUserRequest.m */,
+				783EAED01F9B15AF0089DCEB /* JCGetTweetsRequest.h */,
+				783EAED11F9B15AF0089DCEB /* JCGetTweetsRequest.m */,
+				783EAED31F9B169F0089DCEB /* JCMomentsRequestManager.h */,
+				783EAED41F9B169F0089DCEB /* JCMomentsRequestManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		783EAEC51F99EDDE0089DCEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEEC1F9B28250089DCEB /* JCMomentsHeaderView.h */,
+				783EAEED1F9B28250089DCEB /* JCMomentsHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		783EAEC91F99EFC70089DCEB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				783EAECA1F99F13F0089DCEB /* JCRequest.h */,
+				783EAECB1F99F13F0089DCEB /* JCRequest.m */,
+				783EAED61F9B18110089DCEB /* JCNavigationViewController.h */,
+				783EAED71F9B18110089DCEB /* JCNavigationViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		783EAED91F9B1C4F0089DCEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEDA1F9B1C6B0089DCEB /* JCMomentsViewModel.h */,
+				783EAEDB1F9B1C6B0089DCEB /* JCMomentsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		783EAEF01F9B40E90089DCEB /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				783EAEF11F9B42140089DCEB /* UIImageView+ImageCache.h */,
+				783EAEF21F9B42140089DCEB /* UIImageView+ImageCache.m */,
+				783EAEF41F9B45FD0089DCEB /* JCImageLoader.h */,
+				783EAEF51F9B45FD0089DCEB /* JCImageLoader.m */,
+				783EAEF71F9B48970089DCEB /* JCImageCache.h */,
+				783EAEF81F9B48970089DCEB /* JCImageCache.m */,
+			);
+			path = ImageCache;
 			sourceTree = "<group>";
 		};
 		C22918F5274A1B2489D32710 /* Pods */ = {
@@ -343,9 +507,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783EAEE81F9B21F20089DCEB /* JCMomentsCommentModel.m in Sources */,
+				783EAEE21F9B20A20089DCEB /* JCSingleTweetModel.m in Sources */,
+				783EAED51F9B169F0089DCEB /* JCMomentsRequestManager.m in Sources */,
+				783EAEF61F9B45FD0089DCEB /* JCImageLoader.m in Sources */,
 				783EAE911F99E0000089DCEB /* ViewController.m in Sources */,
+				783EAEEE1F9B28250089DCEB /* JCMomentsHeaderView.m in Sources */,
+				783EAED21F9B15AF0089DCEB /* JCGetTweetsRequest.m in Sources */,
+				783EAEE51F9B215B0089DCEB /* JCMomentsSenderModel.m in Sources */,
+				783EAED81F9B18110089DCEB /* JCNavigationViewController.m in Sources */,
+				783EAEDF1F9B1DDE0089DCEB /* JCUserInfoModel.m in Sources */,
 				783EAE9C1F99E0000089DCEB /* main.m in Sources */,
+				783EAEDC1F9B1C6B0089DCEB /* JCMomentsViewModel.m in Sources */,
+				783EAECF1F9B14D70089DCEB /* JCGetUserRequest.m in Sources */,
 				783EAE8E1F99E0000089DCEB /* AppDelegate.m in Sources */,
+				783EAECC1F99F13F0089DCEB /* JCRequest.m in Sources */,
+				783EAEC81F99EDFE0089DCEB /* JCMomentsViewController.m in Sources */,
+				783EAEF31F9B42140089DCEB /* UIImageView+ImageCache.m in Sources */,
+				783EAEEB1F9B22250089DCEB /* JCMomentsImageModel.m in Sources */,
+				783EAEF91F9B48970089DCEB /* JCImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +691,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VDYKR66KN4;
+				GCC_PREFIX_HEADER = JacobWechatMoments/PrefixHeader.pch;
 				INFOPLIST_FILE = JacobWechatMoments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMoments;
@@ -526,6 +707,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VDYKR66KN4;
+				GCC_PREFIX_HEADER = JacobWechatMoments/PrefixHeader.pch;
 				INFOPLIST_FILE = JacobWechatMoments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMoments;

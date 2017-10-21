@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  JacobWechatMoments
+//
+//  Created by 陈波 on 2017/10/20.
+//  Copyright © 2017年 陈波. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import "JCDefine.h"
+#import "UIImageView+ImageCache.h"
+
+#endif /* PrefixHeader_pch */

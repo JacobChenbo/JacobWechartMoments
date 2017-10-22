@@ -14,7 +14,7 @@ static char *queueName = "downloadQueueName";
 @implementation JCImageLoader
 
 - (void)dealloc {
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 }
 
 - (id)init {

@@ -12,5 +12,8 @@
 @interface JCMomentsViewModel : NSObject
 
 @property (nonatomic, copy) void (^userInfoCallback)(JCUserInfoModel *);
+@property (nonatomic, copy) void (^loadAllTweetsFinishedCallback)(void);
+
+- (NSArray *)getTweetsDataByPage:(NSInteger)page pageSize:(NSInteger)pageSize;
 
 @end

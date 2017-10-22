@@ -7,7 +7,7 @@
 //
 
 #import "JCImageCache.h"
-#import<CommonCrypto/CommonDigest.h>
+#import "CommonUtils.h"
 
 static char *queueName = "IOQueueName";
 
@@ -113,7 +113,7 @@ static char *queueName = "IOQueueName";
 #pragma mark File
 
 - (NSString *)filePathFromImageURL:(NSURL *)imageURL {
-    NSString *urlMD5Value = [self md5:[imageURL absoluteString]];
+    NSString *urlMD5Value = [CommonUtils MD5:[imageURL absoluteString]];
     return [[self getImageDirectory] stringByAppendingPathComponent:urlMD5Value];
 }
 
@@ -126,19 +126,6 @@ static char *queueName = "IOQueueName";
         [fileManager createDirectoryAtPath:imagePath withIntermediateDirectories:YES attributes:nil error:nil];
     }
     return imagePath;
-}
-
-- (NSString *) md5:(NSString *) input {
-    const char *cStr = [input UTF8String];
-    unsigned char digest[CC_MD5_DIGEST_LENGTH];
-    CC_MD5( cStr, strlen(cStr), digest ); // This is the md5 call
-    
-    NSMutableString *output = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
-    
-    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
-        [output appendFormat:@"%02x", digest[i]];
-    
-    return  output;
 }
 
 @end

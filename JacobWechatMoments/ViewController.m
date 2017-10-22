@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "JCMomentsViewController.h"
 
 @interface ViewController ()
 
@@ -17,8 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *button = [[UIButton alloc] init];
+    [self.view addSubview:button];
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(button.superview);
+        make.size.mas_equalTo(CGSizeMake(100, 40));
+    }];
+    [button setTitle:@"WeChat" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor lightGrayColor];
+    button.titleLabel.textColor = [UIColor blackColor];
+    [button addTarget:self action:@selector(onClickButton) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)onClickButton {
+    JCMomentsViewController *viewController = [[JCMomentsViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

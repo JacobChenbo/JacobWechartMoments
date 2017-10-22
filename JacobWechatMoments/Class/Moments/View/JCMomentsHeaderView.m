@@ -40,6 +40,7 @@
         make.bottom.equalTo(bgImage.superview).offset(-40);
     }];
     bgImage.backgroundColor = UIColorFromRGB(0xDDDDDD);
+    bgImage.contentMode = UIViewContentModeScaleAspectFill;
     self.bgImageView = bgImage;
     
     UIImageView *avatarImageView = [UIImageView new];
@@ -71,7 +72,7 @@
     _userInfoModel = userInfoModel;
     
     self.nameLabel.text = userInfoModel.nick;
-    [self.avatarImageView setImageWithURL:userInfoModel.avatar placeholderImageName:@""];
+    [self.avatarImageView setImageWithURL:userInfoModel.avatar placeholderImageName:@"placeholder"];
     [self.bgImageView setImageWithURL:userInfoModel.profileImage placeholderImageName:@""];
 }
 

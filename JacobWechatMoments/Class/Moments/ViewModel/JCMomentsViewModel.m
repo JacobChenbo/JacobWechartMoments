@@ -27,10 +27,13 @@
 - (id)init {
     if (self = [super init]) {
         [self getUserRequest];
+        // Load all tweets in memory at first time
         [self getTweetsRequest];
     }
     return self;
 }
+
+#pragma mark Network method
 
 - (void)getUserRequest {
     JCGetUserRequest *request = [[JCGetUserRequest alloc] init];
@@ -67,10 +70,39 @@
                 [weakSelf.tweetsList addObject:singleTweetModel];
             }
         }
+        
+        if (weakSelf.loadAllTweetsFinishedCallback) {
+            weakSelf.loadAllTweetsFinishedCallback();
+        }
     }];
     [request setFailureJCCompletionBlock:^(id response) {
         
     }];
+}
+
+#pragma mark public method
+
+- (NSArray *)getTweetsDataByPage:(NSInteger)page pageSize:(NSInteger)pageSize {
+    NSArray *result = [[NSArray alloc] init];
+    if (self.tweetsList.count == 0) {
+        return result;
+    }
+    
+    NSInteger tweetsCount = self.tweetsList.count;
+    NSInteger startNumber = (page - 1) * pageSize;
+    NSInteger endNumber = page * pageSize;
+    
+    if (startNumber >= tweetsCount) {
+        // startNumber >= tweetsCount, endNumbeer > tweetsCount, empty
+    } else if (endNumber > tweetsCount) {
+        // startNumber < tweetsCount, endNumber > tweetsCount,
+        result = [self.tweetsList subarrayWithRange:NSMakeRange(startNumber, tweetsCount - startNumber)];
+    } else {
+        // startNumber < tweetsCount, endNumber < tweetsCount
+        result = [self.tweetsList subarrayWithRange:NSMakeRange(startNumber, endNumber - startNumber)];
+    }
+    
+    return result;
 }
 
 #pragma mark Get

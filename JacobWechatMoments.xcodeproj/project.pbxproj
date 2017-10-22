@@ -19,7 +19,6 @@
 		783EAECC1F99F13F0089DCEB /* JCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAECB1F99F13F0089DCEB /* JCRequest.m */; };
 		783EAECF1F9B14D70089DCEB /* JCGetUserRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAECE1F9B14D70089DCEB /* JCGetUserRequest.m */; };
 		783EAED21F9B15AF0089DCEB /* JCGetTweetsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAED11F9B15AF0089DCEB /* JCGetTweetsRequest.m */; };
-		783EAED51F9B169F0089DCEB /* JCMomentsRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAED41F9B169F0089DCEB /* JCMomentsRequestManager.m */; };
 		783EAED81F9B18110089DCEB /* JCNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAED71F9B18110089DCEB /* JCNavigationViewController.m */; };
 		783EAEDC1F9B1C6B0089DCEB /* JCMomentsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEDB1F9B1C6B0089DCEB /* JCMomentsViewModel.m */; };
 		783EAEDF1F9B1DDE0089DCEB /* JCUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEDE1F9B1DDE0089DCEB /* JCUserInfoModel.m */; };
@@ -31,6 +30,9 @@
 		783EAEF31F9B42140089DCEB /* UIImageView+ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEF21F9B42140089DCEB /* UIImageView+ImageCache.m */; };
 		783EAEF61F9B45FD0089DCEB /* JCImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEF51F9B45FD0089DCEB /* JCImageLoader.m */; };
 		783EAEF91F9B48970089DCEB /* JCImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EAEF81F9B48970089DCEB /* JCImageCache.m */; };
+		785DE3B61F9BA9B3008C5EBF /* JCMomentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3B51F9BA9B3008C5EBF /* JCMomentsTableViewCell.m */; };
+		785DE3BC1F9CBF2C008C5EBF /* JCMomentsCommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3BB1F9CBF2C008C5EBF /* JCMomentsCommentsView.m */; };
+		785DE3CA1F9CD4F3008C5EBF /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */; };
 		D923B2099B3969B36FB8261A /* libPods-JacobWechatMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */; };
 /* End PBXBuildFile section */
 
@@ -79,8 +81,6 @@
 		783EAECE1F9B14D70089DCEB /* JCGetUserRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCGetUserRequest.m; sourceTree = "<group>"; };
 		783EAED01F9B15AF0089DCEB /* JCGetTweetsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCGetTweetsRequest.h; sourceTree = "<group>"; };
 		783EAED11F9B15AF0089DCEB /* JCGetTweetsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCGetTweetsRequest.m; sourceTree = "<group>"; };
-		783EAED31F9B169F0089DCEB /* JCMomentsRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsRequestManager.h; sourceTree = "<group>"; };
-		783EAED41F9B169F0089DCEB /* JCMomentsRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsRequestManager.m; sourceTree = "<group>"; };
 		783EAED61F9B18110089DCEB /* JCNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCNavigationViewController.h; sourceTree = "<group>"; };
 		783EAED71F9B18110089DCEB /* JCNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCNavigationViewController.m; sourceTree = "<group>"; };
 		783EAEDA1F9B1C6B0089DCEB /* JCMomentsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsViewModel.h; sourceTree = "<group>"; };
@@ -104,6 +104,12 @@
 		783EAEF51F9B45FD0089DCEB /* JCImageLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCImageLoader.m; sourceTree = "<group>"; };
 		783EAEF71F9B48970089DCEB /* JCImageCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCImageCache.h; sourceTree = "<group>"; };
 		783EAEF81F9B48970089DCEB /* JCImageCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCImageCache.m; sourceTree = "<group>"; };
+		785DE3B41F9BA9B3008C5EBF /* JCMomentsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsTableViewCell.h; sourceTree = "<group>"; };
+		785DE3B51F9BA9B3008C5EBF /* JCMomentsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsTableViewCell.m; sourceTree = "<group>"; };
+		785DE3BA1F9CBF2C008C5EBF /* JCMomentsCommentsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCMomentsCommentsView.h; sourceTree = "<group>"; };
+		785DE3BB1F9CBF2C008C5EBF /* JCMomentsCommentsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsCommentsView.m; sourceTree = "<group>"; };
+		785DE3C81F9CD4F3008C5EBF /* CommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JacobWechatMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,6 +210,7 @@
 		783EAEBF1F99EDDE0089DCEB /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				785DE3C71F9CD4D5008C5EBF /* Utils */,
 				783EAEF01F9B40E90089DCEB /* ImageCache */,
 			);
 			path = Library;
@@ -263,8 +270,6 @@
 				783EAECE1F9B14D70089DCEB /* JCGetUserRequest.m */,
 				783EAED01F9B15AF0089DCEB /* JCGetTweetsRequest.h */,
 				783EAED11F9B15AF0089DCEB /* JCGetTweetsRequest.m */,
-				783EAED31F9B169F0089DCEB /* JCMomentsRequestManager.h */,
-				783EAED41F9B169F0089DCEB /* JCMomentsRequestManager.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -274,6 +279,10 @@
 			children = (
 				783EAEEC1F9B28250089DCEB /* JCMomentsHeaderView.h */,
 				783EAEED1F9B28250089DCEB /* JCMomentsHeaderView.m */,
+				785DE3B41F9BA9B3008C5EBF /* JCMomentsTableViewCell.h */,
+				785DE3B51F9BA9B3008C5EBF /* JCMomentsTableViewCell.m */,
+				785DE3BA1F9CBF2C008C5EBF /* JCMomentsCommentsView.h */,
+				785DE3BB1F9CBF2C008C5EBF /* JCMomentsCommentsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +318,15 @@
 				783EAEF81F9B48970089DCEB /* JCImageCache.m */,
 			);
 			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		785DE3C71F9CD4D5008C5EBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				785DE3C81F9CD4F3008C5EBF /* CommonUtils.h */,
+				785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		C22918F5274A1B2489D32710 /* Pods */ = {
@@ -458,9 +476,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JacobWechatMoments/Pods-JacobWechatMoments-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -508,11 +529,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				783EAEE81F9B21F20089DCEB /* JCMomentsCommentModel.m in Sources */,
+				785DE3CA1F9CD4F3008C5EBF /* CommonUtils.m in Sources */,
 				783EAEE21F9B20A20089DCEB /* JCSingleTweetModel.m in Sources */,
-				783EAED51F9B169F0089DCEB /* JCMomentsRequestManager.m in Sources */,
 				783EAEF61F9B45FD0089DCEB /* JCImageLoader.m in Sources */,
 				783EAE911F99E0000089DCEB /* ViewController.m in Sources */,
 				783EAEEE1F9B28250089DCEB /* JCMomentsHeaderView.m in Sources */,
+				785DE3B61F9BA9B3008C5EBF /* JCMomentsTableViewCell.m in Sources */,
 				783EAED21F9B15AF0089DCEB /* JCGetTweetsRequest.m in Sources */,
 				783EAEE51F9B215B0089DCEB /* JCMomentsSenderModel.m in Sources */,
 				783EAED81F9B18110089DCEB /* JCNavigationViewController.m in Sources */,
@@ -520,6 +542,7 @@
 				783EAE9C1F99E0000089DCEB /* main.m in Sources */,
 				783EAEDC1F9B1C6B0089DCEB /* JCMomentsViewModel.m in Sources */,
 				783EAECF1F9B14D70089DCEB /* JCGetUserRequest.m in Sources */,
+				785DE3BC1F9CBF2C008C5EBF /* JCMomentsCommentsView.m in Sources */,
 				783EAE8E1F99E0000089DCEB /* AppDelegate.m in Sources */,
 				783EAECC1F99F13F0089DCEB /* JCRequest.m in Sources */,
 				783EAEC81F99EDFE0089DCEB /* JCMomentsViewController.m in Sources */,
@@ -693,6 +716,7 @@
 				DEVELOPMENT_TEAM = VDYKR66KN4;
 				GCC_PREFIX_HEADER = JacobWechatMoments/PrefixHeader.pch;
 				INFOPLIST_FILE = JacobWechatMoments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMoments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -709,6 +733,7 @@
 				DEVELOPMENT_TEAM = VDYKR66KN4;
 				GCC_PREFIX_HEADER = JacobWechatMoments/PrefixHeader.pch;
 				INFOPLIST_FILE = JacobWechatMoments/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jacob.JacobWechatMoments;
 				PRODUCT_NAME = "$(TARGET_NAME)";

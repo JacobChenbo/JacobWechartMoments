@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "JCNavigationViewController.h"
 #import "JCMomentsViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    JCMomentsViewController *momentsViewController = [[JCMomentsViewController alloc] init];
+    ViewController *momentsViewController = [[ViewController alloc] init];
     JCNavigationViewController *navigationController = [[JCNavigationViewController alloc] initWithRootViewController:momentsViewController];
     self.window.rootViewController = navigationController;
     [self.window makeKeyWindow];

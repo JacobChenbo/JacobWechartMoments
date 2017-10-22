@@ -33,4 +33,17 @@
  */
 @property (nonatomic, strong) NSArray *comments;
 
+//////////////////////////////
+/**
+ Description Calculation the tweet height
+ */
+@property (nonatomic, assign) CGFloat tweetHeight;
+
+/**
+ Description Only images list height
+ */
+@property (nonatomic, assign) CGFloat imagesListHeight;
+
+@property (nonatomic, assign) CGFloat commentsListHeight;
+
 @end

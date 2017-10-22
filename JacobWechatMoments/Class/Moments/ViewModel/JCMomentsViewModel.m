@@ -50,7 +50,7 @@
         }
     }];
     [request setFailureJCCompletionBlock:^(id response) {
-        
+        NSLog(@"====== Jacob Wechat moments get user info failed. Please back and try again. ======");
     }];
 }
 
@@ -76,7 +76,7 @@
         }
     }];
     [request setFailureJCCompletionBlock:^(id response) {
-        
+        NSLog(@"====== Jacob Wechat moments get tweets failed. ======");
     }];
 }
 

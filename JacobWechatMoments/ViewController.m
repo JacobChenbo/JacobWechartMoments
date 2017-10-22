@@ -26,7 +26,7 @@
         make.center.equalTo(button.superview);
         make.size.mas_equalTo(CGSizeMake(100, 40));
     }];
-    [button setTitle:@"WeChat" forState:UIControlStateNormal];
+    [button setTitle:@"Moments" forState:UIControlStateNormal];
     button.backgroundColor = [UIColor lightGrayColor];
     button.titleLabel.textColor = [UIColor blackColor];
     [button addTarget:self action:@selector(onClickButton) forControlEvents:UIControlEventTouchUpInside];

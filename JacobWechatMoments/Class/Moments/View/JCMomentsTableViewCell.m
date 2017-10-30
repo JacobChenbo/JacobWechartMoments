@@ -164,8 +164,27 @@
             
             [self.emptyImageViews addObject:tempImageView];
             lastTempView = tempImageView;
+            
+            // tap image action
+            UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapImage:)];
+            [tempImageView addGestureRecognizer:tapGesture];
         }
     }
+}
+
+- (void)onTapImage:(UIGestureRecognizer *)gesture {
+    UIImageView *imageView = (UIImageView *)gesture.view;
+    
+    NSInteger indexInEmptyImageViews = [self.emptyImageViews indexOfObject:imageView];
+    NSInteger indexInTweetImages = indexInEmptyImageViews;
+    if (self.tweetModel.images.count == 4) {
+        // special index for 4
+        if (indexInEmptyImageViews >= 2) {
+            indexInTweetImages = indexInEmptyImageViews - 1;
+        }
+    }
+    
+    NSLog(@"tap index: %ld", indexInTweetImages);
 }
 
 #pragma mark Set value
@@ -232,6 +251,7 @@
             // special size for only 1
         }
         [emptyImageView setImageWithURL:imageModel.url placeholderImageName:@"placeholder"];
+        emptyImageView.userInteractionEnabled = YES;
     }
 }
 
@@ -240,6 +260,7 @@
         UIImageView *imageView = (UIImageView *)obj;
         if (imageView.image) {
             imageView.image = nil;
+            imageView.userInteractionEnabled = NO;
         }
     }];
 }

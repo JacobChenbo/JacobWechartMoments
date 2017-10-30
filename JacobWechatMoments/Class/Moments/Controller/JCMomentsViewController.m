@@ -12,7 +12,7 @@
 #import "JCUserInfoModel.h"
 #import "JCMomentsTableViewCell.h"
 #import "JCSingleTweetModel.h"
-#import <MJRefresh/MJRefresh.h>
+#import "JCRefreshView.h"
 
 @interface JCMomentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -20,6 +20,8 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) JCMomentsHeaderView *headerView;
+
+@property (nonatomic, strong) JCRefreshView *refreshView;
 
 // UITableView's dataSource;
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -55,6 +57,17 @@
 }
 
 - (void)setupTableView {
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    
+    UIView *emptyView = [UIView new];
+    [self.view addSubview:emptyView];
+    [emptyView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.equalTo(emptyView.superview);
+        make.height.equalTo(@0);
+    }];
+    
     UITableView *tableView = [UITableView new];
     [self.view addSubview:tableView];
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -67,9 +80,17 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refresh)];
 
     self.tableView = tableView;
+    
+    __weak JCMomentsViewController *weakSelf = self;
+    JCRefreshView *refreshView = [JCRefreshView attachToScrollView:self.tableView handler:^(JCRefreshView *refreshView) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [refreshView finishingLoading];
+            [weakSelf refresh];
+        });
+    }];
+    self.refreshView = refreshView;
 }
 
 - (void)setupMomentsViewModel {
@@ -97,7 +118,6 @@
 - (void)loadMore {
     self.loadingData = YES;
     self.page++;
-    [self.tableView.mj_footer endRefreshing];
 
     [self getDataFromTweetsList];
 }
@@ -107,7 +127,6 @@
     NSArray *pageData = [self.viewModel getTweetsDataByPage:self.page pageSize:self.pageSize];
     if (self.page == 1) {
         [self.dataSource removeAllObjects];
-        [self.tableView.mj_header endRefreshing];
     }
     
     if (pageData.count < self.pageSize) {
@@ -123,14 +142,21 @@
     self.loadingData = NO;
 }
 
+#pragma UIScrollView Delegate
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self.refreshView scrollViewDidScroll];
+    
     CGFloat currentOffset = scrollView.contentOffset.y;
     CGFloat maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height;
     
     if (currentOffset - maximumOffset > 20.0 && !self.loadingData && self.needLoadMore) {
         [self loadMore];
     }
+}
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    [self.refreshView scrollViewDidEndDragging];
 }
 
 #pragma mark UITableView Delegate

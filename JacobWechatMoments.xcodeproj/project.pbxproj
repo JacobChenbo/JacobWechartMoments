@@ -33,6 +33,7 @@
 		785DE3B61F9BA9B3008C5EBF /* JCMomentsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3B51F9BA9B3008C5EBF /* JCMomentsTableViewCell.m */; };
 		785DE3BC1F9CBF2C008C5EBF /* JCMomentsCommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3BB1F9CBF2C008C5EBF /* JCMomentsCommentsView.m */; };
 		785DE3CA1F9CD4F3008C5EBF /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */; };
+		78954DB31FA2043C00C5AFE7 /* JCRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78954DB21FA2043C00C5AFE7 /* JCRefreshView.m */; };
 		D923B2099B3969B36FB8261A /* libPods-JacobWechatMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */; };
 /* End PBXBuildFile section */
 
@@ -110,6 +111,8 @@
 		785DE3BB1F9CBF2C008C5EBF /* JCMomentsCommentsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCMomentsCommentsView.m; sourceTree = "<group>"; };
 		785DE3C81F9CD4F3008C5EBF /* CommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
 		785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		78954DB11FA2043C00C5AFE7 /* JCRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRefreshView.h; sourceTree = "<group>"; };
+		78954DB21FA2043C00C5AFE7 /* JCRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRefreshView.m; sourceTree = "<group>"; };
 		9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JacobWechatMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -325,6 +328,8 @@
 			children = (
 				785DE3C81F9CD4F3008C5EBF /* CommonUtils.h */,
 				785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */,
+				78954DB11FA2043C00C5AFE7 /* JCRefreshView.h */,
+				78954DB21FA2043C00C5AFE7 /* JCRefreshView.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				783EAEE81F9B21F20089DCEB /* JCMomentsCommentModel.m in Sources */,
 				785DE3CA1F9CD4F3008C5EBF /* CommonUtils.m in Sources */,
 				783EAEE21F9B20A20089DCEB /* JCSingleTweetModel.m in Sources */,
+				78954DB31FA2043C00C5AFE7 /* JCRefreshView.m in Sources */,
 				783EAEF61F9B45FD0089DCEB /* JCImageLoader.m in Sources */,
 				783EAE911F99E0000089DCEB /* ViewController.m in Sources */,
 				783EAEEE1F9B28250089DCEB /* JCMomentsHeaderView.m in Sources */,

@@ -34,6 +34,8 @@
 		785DE3BC1F9CBF2C008C5EBF /* JCMomentsCommentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3BB1F9CBF2C008C5EBF /* JCMomentsCommentsView.m */; };
 		785DE3CA1F9CD4F3008C5EBF /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */; };
 		78954DB31FA2043C00C5AFE7 /* JCRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78954DB21FA2043C00C5AFE7 /* JCRefreshView.m */; };
+		78954DB71FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78954DB61FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.m */; };
+		78954DBA1FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78954DB91FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.m */; };
 		D923B2099B3969B36FB8261A /* libPods-JacobWechatMoments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +115,10 @@
 		785DE3C91F9CD4F3008C5EBF /* CommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
 		78954DB11FA2043C00C5AFE7 /* JCRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCRefreshView.h; sourceTree = "<group>"; };
 		78954DB21FA2043C00C5AFE7 /* JCRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCRefreshView.m; sourceTree = "<group>"; };
+		78954DB51FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPhotoBrowserZoomView.h; sourceTree = "<group>"; };
+		78954DB61FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPhotoBrowserZoomView.m; sourceTree = "<group>"; };
+		78954DB81FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCPhotoBrowserSlideView.h; sourceTree = "<group>"; };
+		78954DB91FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCPhotoBrowserSlideView.m; sourceTree = "<group>"; };
 		9EDF7235D672BC408165C2D0 /* libPods-JacobWechatMoments.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JacobWechatMoments.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -213,6 +219,7 @@
 		783EAEBF1F99EDDE0089DCEB /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				78954DB41FA70CDB00C5AFE7 /* PhotoBrowser */,
 				785DE3C71F9CD4D5008C5EBF /* Utils */,
 				783EAEF01F9B40E90089DCEB /* ImageCache */,
 			);
@@ -332,6 +339,17 @@
 				78954DB21FA2043C00C5AFE7 /* JCRefreshView.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		78954DB41FA70CDB00C5AFE7 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				78954DB51FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.h */,
+				78954DB61FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.m */,
+				78954DB81FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.h */,
+				78954DB91FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.m */,
+			);
+			path = PhotoBrowser;
 			sourceTree = "<group>";
 		};
 		C22918F5274A1B2489D32710 /* Pods */ = {
@@ -534,7 +552,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				783EAEE81F9B21F20089DCEB /* JCMomentsCommentModel.m in Sources */,
+				78954DB71FA70D0800C5AFE7 /* JCPhotoBrowserZoomView.m in Sources */,
 				785DE3CA1F9CD4F3008C5EBF /* CommonUtils.m in Sources */,
+				78954DBA1FA74BB800C5AFE7 /* JCPhotoBrowserSlideView.m in Sources */,
 				783EAEE21F9B20A20089DCEB /* JCSingleTweetModel.m in Sources */,
 				78954DB31FA2043C00C5AFE7 /* JCRefreshView.m in Sources */,
 				783EAEF61F9B45FD0089DCEB /* JCImageLoader.m in Sources */,

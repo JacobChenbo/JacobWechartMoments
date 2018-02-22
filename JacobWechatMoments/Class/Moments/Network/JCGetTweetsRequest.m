@@ -11,7 +11,7 @@
 @implementation JCGetTweetsRequest
 
 - (NSString *)requestUrl {
-    return @"user/jsmith/tweets";
+    return @"tweets";
 }
 
 - (YTKRequestMethod)requestMethod {

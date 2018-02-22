@@ -11,7 +11,7 @@
 @implementation JCGetUserRequest
 
 - (NSString *)requestUrl {
-    return @"user/jsmith";
+    return @"userInfo";
 }
 
 - (YTKRequestMethod)requestMethod {

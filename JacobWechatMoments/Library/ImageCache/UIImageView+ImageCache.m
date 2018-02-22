@@ -17,6 +17,10 @@
 }
 
 - (void)setImageWithURL:(NSString *)url placeholderImageName:(NSString *)placeholderName {
+    return [self setImageWithURL:url placeholderImageName:placeholderName completionBlock:nil];
+}
+
+- (void)setImageWithURL:(NSString *)url placeholderImageName:(NSString *)placeholderName completionBlock:(completionBlock)completionBlock {
     // placeHolder
     if (placeholderName.length > 0) {
         UIImage *image = [UIImage imageNamed:placeholderName];
@@ -25,17 +29,26 @@
     
     // Load image data
     JCImageLoader *imageLoader = [[JCImageLoader alloc] init];
-//    self.imageLoader = imageLoader;
     __weak UIImageView *weakSelf = self;
     [imageLoader loadImageDataWithURL:url completed:^(NSData *imageData, BOOL finished, NSString *imageURL, NSError *error) {
         __strong UIImageView *strongSelf = weakSelf;
         if (finished) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 // main thread refresh UI
-                strongSelf.image = [UIImage imageWithData:imageData];
+                UIImage *image = [UIImage imageWithData:imageData];
+                strongSelf.image = image;
+                
+                if (completionBlock) {
+                    completionBlock(image, imageURL);
+                }
             });
+        } else {
+            if (completionBlock) {
+                completionBlock(nil, imageURL);
+            }
         }
     }];
+
 }
 
 @end

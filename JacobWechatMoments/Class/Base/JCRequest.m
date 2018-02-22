@@ -45,7 +45,7 @@
 }
 
 - (NSString *)baseUrl {
-    return @"http://thoughtworks-ios.herokuapp.com/";
+    return @"http://localhost:8889/";
 }
 
 - (YTKRequestMethod)requestMethod {

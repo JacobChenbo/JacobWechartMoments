@@ -8,6 +8,7 @@
 
 #import "JCMomentsTableViewCell.h"
 #import "JCMomentsCommentsView.h"
+#import "JCPhotoBrowserSlideView.h"
 
 @interface JCMomentsTableViewCell ()
 
@@ -185,6 +186,15 @@
     }
     
     NSLog(@"tap index: %ld", indexInTweetImages);
+    
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (JCMomentsImageModel *imageModel in self.tweetModel.images) {
+        [tempArray addObject:imageModel.url];
+    }
+    
+    JCPhotoBrowserSlideView *slideView = [[JCPhotoBrowserSlideView alloc] initWithImageUrlList:tempArray];
+    slideView.pageIndex = indexInTweetImages;
+    [slideView showSlideView];
 }
 
 #pragma mark Set value

@@ -50,7 +50,7 @@
         }
     }];
     [request setFailureJCCompletionBlock:^(id response) {
-        NSLog(@"====== Jacob Wechat moments get user info failed. Please back and try again. ======");
+        NSLog(@"====== Jacob Wechat moments get user info failed. Please check the server and try again. ======");
     }];
 }
 

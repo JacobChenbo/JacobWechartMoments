@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^completionBlock)(UIImage *image, NSString *imageUrl);
+
 @interface UIImageView (ImageCache)
 
 /**
@@ -24,5 +26,7 @@
  @param placeholderName placeholderImageName
  */
 - (void)setImageWithURL:(NSString *)url placeholderImageName:(NSString *)placeholderName;
+
+- (void)setImageWithURL:(NSString *)url placeholderImageName:(NSString *)placeholderName completionBlock:(completionBlock)completionBlock;
 
 @end
